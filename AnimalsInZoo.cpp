@@ -15,8 +15,8 @@ AnimalsInZoo::AnimalsInZoo() {
 }
 
 void AnimalsInZoo::addAnimal(Animal a) {
-   a = a;
-   numAnimals = 1;
+   this->a = a;
+   numAnimals++;
 }
 
 void AnimalsInZoo::display() { 

@@ -10,15 +10,14 @@ int main() {
    Animal animal2("Giant Panda", 1869);
    Animal animal3("Red Kangaroo", 1822);
 
-   delete animal1;
-   animal1 = new Animal("Snow Leopard", 1777);
+   animal1 = Animal("Snow Leopard", 1777);
 
-   AnimalsInZoo numAnimals = new AnimalsInZoo(animal1);
+   AnimalsInZoo numAnimals(animal1);
 
    animal2.display();
-   animal1->display();
+   animal1.display();
    animal3.display();
    numAnimals.display();
 
-   delete animal1;
+   return 0;
 }
