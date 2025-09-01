@@ -7,11 +7,11 @@ using namespace std;
 
 class Animal {
    public:
-      Animal(string species, unsigned int year_discovered);
       Animal();
+      Animal(const string& name, unsigned int year_discovered);
       void display();
    private:
-      string species;
+      string name;
       unsigned int year_discovered;
 };
 #endif

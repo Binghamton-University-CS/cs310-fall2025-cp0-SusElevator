@@ -5,13 +5,13 @@
 using namespace std;
 
 
-Animal::Animal(string speciesName, unsigned int discoveryYear) {
-   species = speciesName;
+Animal::Animal() : name("N/A"), year_discovered(0) {}
+
+Animal::Animal(const string& discoveryName, unsigned int discoveryYear) {
+   name = discoveryName;
    year_discovered = discoveryYear;
 }
 
-Animal::Animal() : species(""), year_discovered(0) {};
-
 void Animal::display() {
-   cout << species << " [" << year_discovered << "]" << endl;
+   cout << name << " [" << year_discovered << "]" << endl;
 }

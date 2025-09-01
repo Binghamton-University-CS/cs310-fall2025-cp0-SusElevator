@@ -1,3 +1,5 @@
+#ifndef ANIMALSINZOO_H
+#define ANIMALSINZOO_H
 #include "Animal.h"
 #include <iostream>
 #include <stdlib.h>
@@ -6,11 +8,13 @@ using namespace std;
 
 class AnimalsInZoo {
    public:
+        AnimalsInZoo();
         AnimalsInZoo(Animal a);
-        int numAnimals();
+        void addAnimal(Animal a);
         void display();
          
    private:
         int numAnimals;
-        Animal a();
+        Animal a;
 };
+#endif

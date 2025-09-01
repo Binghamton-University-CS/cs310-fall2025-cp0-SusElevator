@@ -6,6 +6,7 @@
 using namespace std;
 
 AnimalsInZoo::AnimalsInZoo(Animal a) {
+   a = a;
    numAnimals = 1;
 }
 
@@ -13,7 +14,12 @@ AnimalsInZoo::AnimalsInZoo() {
    numAnimals = 0;
 }
 
-AnimalsInZoo::display() { 
+void AnimalsInZoo::addAnimal(Animal a) {
+   a = a;
+   numAnimals = 1;
+}
+
+void AnimalsInZoo::display() { 
    cout << numAnimals << endl;
    if (numAnimals > 0) {
       a.display();
