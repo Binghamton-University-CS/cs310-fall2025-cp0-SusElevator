@@ -6,7 +6,7 @@ using namespace std;
 
 class AnimalsInZoo {
    public:
-        AnimalsInZoo(Animal a)
+        AnimalsInZoo(Animal a);
         numAnimals();
         void display();
          
