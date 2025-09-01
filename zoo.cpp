@@ -10,7 +10,7 @@ int main() {
    Animal animal2("Giant Panda", 1869);
    Animal animal3("Red Kangaroo", 1822);
 
-   delete animal1;
+   delete Animal1;
    animal1 = new Animal("Snow Leopard", 1777);
 
    AnimalsInZoo numAnimals = new AnimalsInZoo(animal1);
@@ -20,5 +20,5 @@ int main() {
    animal3.display();
    numAnimals.display();
 
-   delete animal1;
+   delete Animal1;
 }
