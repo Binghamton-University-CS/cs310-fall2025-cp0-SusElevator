@@ -6,11 +6,11 @@ using namespace std;
 
 
 int main() {
-   Animal Animal1("African Elephant", 1758);
+   Animal animal1("African Elephant", 1758);
    Animal animal2("Giant Panda", 1869);
    Animal animal3("Red Kangaroo", 1822);
 
-   delete Animal1;
+   delete animal1;
    animal1 = new Animal("Snow Leopard", 1777);
 
    AnimalsInZoo numAnimals = new AnimalsInZoo(animal1);
@@ -20,5 +20,5 @@ int main() {
    animal3.display();
    numAnimals.display();
 
-   delete Animal1;
+   delete animal1;
 }
